@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { AddCategory } from './components/AddCategory';
-import { GifGrid } from './components/GifGrid';
+import { AddCategory, GifGrid, Footer } from './components';
+import { Navbar } from './components/Navbar';
+
 
 export const GifExpertApp = () => {
 
@@ -14,7 +15,7 @@ export const GifExpertApp = () => {
 
     return (
         <>
-            <h1>GifsApp</h1>
+            <Navbar />
             <AddCategory 
                 onNewCategory={ event => onAddCategory(event) }
             />
@@ -25,6 +26,7 @@ export const GifExpertApp = () => {
                 ))
             }
 
+            <Footer />
         </>
     )
 }

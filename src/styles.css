@@ -4,18 +4,24 @@
 }
 
 body {
-  padding: 60px;
+  padding: 50px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: center;
 }
   
 input {
-  background-color: white;
-  border-radius: 5px;
-  border: 1px solid rgb(97, 32, 158);
+  background-color: #fff;
+  border-radius: 6px;
+  /* border: 1px solid rgb(97, 32, 158); */
+  border: none;
   color: black;
   font-size: 1.2rem;
   outline: none;
-  padding: 10px 15px;
-  width: 100%;
+  padding: 15px;
+  width: 65%;
 }
   
 h2 {
@@ -25,6 +31,21 @@ h2 {
 h3 {
   font-size: 3rem;
   margin-bottom: 5px;
+}
+
+footer p {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-gif {
+  width: 35px;
+  height: 35px;
+  padding: 10px 0 0 0;
 }
   
 .card-grid {
@@ -60,4 +81,17 @@ h3 {
   
 .card img {
   width: 100%;
+}
+
+.example-search {
+  color: #7f7b7b;
+  margin: 7px 2px;
+}
+
+@media (max-width: 800px) {
+  input {
+    width: 97%;
+    margin: 0;
+    padding: 12px 5px;
+  }
 }

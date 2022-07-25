@@ -25,6 +25,7 @@ export const AddCategory = ({ onNewCategory }) => {
                     value={inputValue}
                     onChange={ onInputChange }
                 />
+                <p className='example-search'>{ inputValue.length < 1 ? 'Por ej: Hola Mundo' : null }</p>
             </form>
         </>
     )
