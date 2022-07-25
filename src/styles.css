@@ -89,6 +89,10 @@ footer p {
 }
 
 @media (max-width: 800px) {
+  body {
+    padding: 10px;
+  }
+
   input {
     width: 97%;
     margin: 0;
