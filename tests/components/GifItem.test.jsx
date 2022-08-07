@@ -5,7 +5,7 @@ import { GifItem } from "../../src/components";
 describe('Testing of <GifItem />', () => {
 
     const title = 'Hello World';
-    const url = 'https://image.com.co';
+    const url = 'https://image.com.co/';
     //? For look as console.log, use screen.debug();
 
     test('Should create a snapshot', () => {
@@ -22,4 +22,9 @@ describe('Testing of <GifItem />', () => {
         expect( alt ).toBe( title );
     });
 
+    test('Should look the title inside component', () => {
+        render( <GifItem title={ title } url={ url } /> );
+        expect( screen.getByText( title ) ).toBeTruthy();
+    });
+    
 });
