@@ -19,7 +19,7 @@ export const AddCategory = ({ onNewCategory }) => {
 
     return (
         <>
-            <form onSubmit={ onSubmit }>
+            <form onSubmit={ onSubmit } aria-label='form'> {/*This help catch form in JEST*/}
                 <input 
                     type="text"
                     placeholder="Buscar gifs"
